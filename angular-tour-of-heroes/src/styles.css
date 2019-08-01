@@ -1,24 +1,29 @@
 /* Application-wide Styles */
-h1 {
+h1,
+h5,
+h6 {
   color: rgb(149, 195, 241);
   font-family: Arial, Helvetica, sans-serif;
 }
 h2,
-h3 {
+h3,
+h4 {
   color: rgb(234, 218, 253);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 body {
-  margin: 2em;
   background-color: rgb(11, 16, 29);
 }
 body,
-input[type="text"],
-button {
+input[type="text"] {
   color: rgb(246, 241, 248);
 }
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-background {
+  background-color: rgb(8, 13, 24);
 }

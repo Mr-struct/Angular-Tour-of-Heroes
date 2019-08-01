@@ -1,0 +1,12 @@
+<h4><i class="material-icons small  yellow-text">star</i>Top Heroes :</h4>
+
+<div class="row">
+  <button
+    *ngFor="let hero of heroes"
+    class="btn-large  waves-effect waves-light pulse center col s4 deep-purple darken-4"
+    style="margin:5%"
+    routerLink="/detail/{{ hero.id }}"
+  >
+    {{ hero.name }}
+  </button>
+</div>

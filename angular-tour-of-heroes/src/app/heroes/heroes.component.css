@@ -17,11 +17,3 @@
   background-color: #4a4e56;
   left: 0em;
 }
-.heroes li.selected {
-  background-color: #000000;
-  color: white;
-}
-.heroes li.selected:hover {
-  background-color: rgb(149, 195, 241);
-  color: white;
-}

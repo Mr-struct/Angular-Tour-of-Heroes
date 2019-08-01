@@ -1,0 +1,16 @@
+<div *ngIf="messageService.messages.length">
+  <button
+    class="btn-small red secondary-content"
+    (click)="messageService.clear()"
+  >
+    <i class="tiny material-icons">clear</i>
+  </button>
+  <h3>Messages:</h3>
+  <div class="card card-background">
+    <ul>
+      <li *ngFor="let message of messageService.messages">
+        {{ message }}
+      </li>
+    </ul>
+  </div>
+</div>
