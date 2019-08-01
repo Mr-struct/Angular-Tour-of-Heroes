@@ -1,0 +1,27 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+}
+.heroes li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: rgb(8, 13, 24);
+  margin: 0.5em;
+  padding: 0.5em;
+  height: 100%;
+}
+.heroes li:hover {
+  background-color: #4a4e56;
+  left: 0em;
+}
+.heroes li.selected {
+  background-color: #000000;
+  color: white;
+}
+.heroes li.selected:hover {
+  background-color: rgb(149, 195, 241);
+  color: white;
+}
