@@ -1,12 +1,16 @@
-<h4>{{ hero.name | uppercase }} Details :</h4>
-<h5>
-  <span>id: </span>
-  {{ hero.id }}
-</h5>
-<div *ngIf="hero">
-  <input type="text" [(ngModel)]="hero.name" placeholder="name" />
+<div *ngIf="hero" class="center">
+  <h4>{{ hero.name | uppercase }} Details :</h4>
+  <h5>
+    <span>id: </span>
+    {{ hero.id }}
+  </h5>
+  <div *ngIf="hero">
+    <input type="text" [(ngModel)]="hero.name" placeholder="name" />
+  </div>
+  <button class="btn green waves-effect waves-light" (click)="save()">
+    save changes
+  </button>
 </div>
-
 <button
   class="btn deep-purple darken-4 waves-effect waves-light"
   (click)="goBack()"

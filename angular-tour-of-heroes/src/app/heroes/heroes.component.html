@@ -1,6 +1,23 @@
 <h2>My Heroes</h2>
+<div>
+  <input #heroName placeholder="Hero name ..." type="text" />
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button
+    class="center btn-large green waves waves-effect waves-light center"
+    (click)="add(heroName.value); heroName.value = ''"
+  >
+    add a hero
+  </button>
+</div>
 <ul class="heroes ">
   <li *ngFor="let hero of heroes">
+    <button
+      class="btn red secondary-content waves-effect waves-light"
+      title="delete hero"
+      (click)="delete(hero)"
+    >
+      x
+    </button>
     <h5 routerLink="/detail/{{ hero.id }}">
       <span class="badge">{{ hero.id }}</span> {{ hero.name }}
     </h5>
